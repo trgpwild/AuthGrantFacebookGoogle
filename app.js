@@ -46,6 +46,6 @@ load('models').then('controllers').then('routes').into(app);
 app.use(error.notFound);
 app.use(error.serverError);
 
-server.listen(9090, function(){
+server.listen(3000, function(){
     console.log("Servidor no ar!");
 });

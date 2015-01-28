@@ -6,10 +6,13 @@ module.exports = function(app) {
 		},
 		google: function(req, res) {
 			console.log("GOOGLE");
+			console.log(req.query.access_token);
+			console.log("####################");
 		},
 		facebook: function(req, res) {
 			console.log("FACEBOOK");
-			console.log(res.raw);
+			console.log(req.query.access_token);
+			console.log("####################");
 		},
 		logout: function(req, res) {
 			req.session.destroy(function(){	
