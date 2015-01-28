@@ -1,0 +1,19 @@
+<% include /header %>
+	<div id="container">
+		<div id="conteudo">
+			<div id="title">
+				<span><%= user.displayName %></span>
+			</div>
+			<div id="profile">
+				<span><b>ID: </b><%= user.id %></span></br>
+				<span><b>NOME: </b><%= user.name.first %></span></br>
+				<span><b>SOBRENOME: </b><%= user.name.last %></span></br>
+				<span><b>E-MAIL: </b><%= user.email %></span></br>
+				<span><b>TOKEN: </b><%= user.token %></span></br>
+			</div>
+			<div id="logout">
+				<a href="/logout"><button class="btn_top">Logout</button></a>				
+			</div>
+		</div>
+	</div>
+<% include /footer %>
