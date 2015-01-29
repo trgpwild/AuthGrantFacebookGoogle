@@ -6,13 +6,13 @@ module.exports = {
     },
     "facebook": {
         "key": "secret_key",
-        "secret": "secret_secret",
+        "secret": "secret",
         "callback": "/facebook/callback",
         "scope": ["user_about_me", "email"]
     },
     "google": {
         "key": "secret_key",
-        "secret": "secret_secret",
+        "secret": "secret",
         "callback": "/google/callback",
         "scope": ["profile", "email"]
     }

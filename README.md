@@ -9,4 +9,4 @@ Utilizar <b>npm install</b> e <b>npm start</b> após o download.
 
 
 &emsp; Como esta havendo boatos que o <a href="http://passportjs.org/">Passport</a> poderá ser ou foi descontinuado, resolvi testar o Grant como alternativa. Ao utilizá-lo, tive uma frustação, foi quando percebi que estava retornando somente o token do usuário, comparando com o Passport, que ao se autenticar, já é retornado os dados que a aplicação obteve permissão, o Grant fica devendo.<br/>
-&emsp; Claro que posso estar esquecendo de algo, como não encontrei muita utilização do Grant na internet, tive dificuldades na configuração e optei por instalar mais duas dependências, uma para retornar os dados do usuário do Facebook e outra para o Google.
+&emsp; Por isso resolvemos( <a href="https://github.com/lcpereira">Eu</a> e o <a href="https://github.com/DouglasHennrich">Douglas</a>  ) brincar com a lib do express.js dentro do grant, alterando o callback de autenticaçao, incluindo as informaçoes do usuario.
