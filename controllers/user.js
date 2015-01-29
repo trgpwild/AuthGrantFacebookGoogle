@@ -42,27 +42,13 @@ module.exports = function(app) {
 			});
         },
         facebook: function(req, res) {
-            var token = req.query.access_token;
+            console.log( "req.customData: " + req.query.raw.displayName );
+            console.log( '=======================================' );
 
-            facebook.setAccessToken(token);
-            facebook.api('me', function(profile) {
-                if (!profile || profile.error) {
-                    console.log(!profile ? 'error occurred' : profile.error);
-                    return;
-                }
-                //Guarda os dados do usuário na sessão
-                req.session.user = {
-	                "displayName" : profile.name,
-	                "id" : profile.id,
-	                name : {
-		                "first" : profile.first_name,
-		                "last" : profile.last_name
-	                },
-	                "email" : profile.email,
-	                "token" : token
-	            };
-                res.redirect('/');
-            });
+            // Salva a customData na sessao
+            req.session.user = req.query.raw
+
+            res.redirect( '/' );
         },
         logout: function(req, res) {
             req.session.destroy(function() {
