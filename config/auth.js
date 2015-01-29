@@ -5,10 +5,10 @@ module.exports = {
         "callback": "/"
     },
     "facebook": {
-        "key": "key_aqui",
-        "secret": "secrect_aqui",
+        "key": "secret_key",
+        "secret": "secret_secret",
         "callback": "/facebook/callback",
-        "scope": ["email"]
+        "scope": ["user_about_me", "email"]
     },
     "google": {
         "key": "key_aqui",
