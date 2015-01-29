@@ -5,8 +5,8 @@ module.exports = {
         "callback": "/"
     },
     "facebook": {
-        "key": "745656022191244",
-        "secret": "b7da69a96dc993de0ec9f6afa80cbf34",
+        "key": "secret_key",
+        "secret": "secret_secret",
         "callback": "/facebook/callback",
         "scope": ["user_about_me", "email"]
     },
