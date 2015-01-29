@@ -1,6 +1,6 @@
 {
   "name": "AuthPassport",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -13,8 +13,6 @@
     "express": "~4.9.0",
     "express-load": "^1.1.14",
     "express-session": "^1.10.1",
-    "fb": "^0.7.0",
-    "googleapis": "^1.1.1",
     "grant": "^2.0.0",
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
