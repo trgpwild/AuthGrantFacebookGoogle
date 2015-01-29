@@ -1,6 +1,6 @@
 <h4><b>Exemplo de autenticação com o Google/Facebook no NodeJs.</b></h4>
 
-Foi utilizado o <a href="https://github.com/simov/grant">Grant</a> para autenticar.
+Foi utilizado o <a href="https://github.com/simov/grant">Grant</a> como Middleware de autenticação.
 
 Utilizar <b>npm install</b> e <b>npm start</b> após o download.
 
