@@ -1,5 +1,3 @@
-require('./config/db');
-
 const KEY = 'lcp.sid', SECRET = 'lcp';
 var express = require('express');
 var load = require('express-load');
@@ -40,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(__dirname + '/public'));
 
-load('models').then('controllers').then('routes').into(app);
+load('controllers').then('routes').into(app);
 
 //Middleware de tratamento erros
 app.use(error.notFound);
