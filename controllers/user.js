@@ -7,6 +7,16 @@ module.exports = function(app) {
                 error: error
             });
         },
+        github: function(req, res) {
+            console.log("profile: ");
+            console.log(req.query.raw);
+            console.log('=======================================');
+
+            // Salva a customData na sessao
+            req.session.user = req.query.raw
+
+            res.redirect('/');
+        },
         google: function(req, res) {
             console.log("profile: ");
             console.log(req.query.raw);
